@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <AWSProjectType>Lambda</AWSProjectType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Amazon.Lambda.Core" Version="1.1.0" />
+    <PackageReference Include="Amazon.Lambda.Serialization.SystemTextJson" Version="1.0.0" />
+    <PackageReference Include="Amazon.SQS" Version="0.16.5" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.105.29" />
+    <PackageReference Include="AWSSDK.SQS" Version="3.3.102.92" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\AirQuality\AirQuality.csproj" />
+  </ItemGroup>
+</Project>
